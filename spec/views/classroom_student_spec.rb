@@ -1,5 +1,5 @@
 require "rails_helper"
-
+system('clear')
 RSpec.describe "show_view" do
   let(:classroom) { Classroom.create(course_name: 'Math', semester: "Spring #{Time.now.year}") }
   let(:oldest_student) { Student.create(name: "Grandpa",
